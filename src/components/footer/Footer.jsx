@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="flex h-72 pb-32 bg-black flex-col ">
       <div className="text-center  p-4 ">
-      <a href="#" className="text-center text-xl font-bold">JD Dark Developer</a>
+      <a href="#" className="text-center text-xl font-bold">JD Mern Developer</a>
 
       </div>
-      <div className="grid grid-cols-3 gap-x-[4rem] md:gap-x-32 m-auto">
+      <div className="grid grid-cols-3 gap-x-[3rem] md:gap-x-32 m-auto">
       <a href="#" className="# cursor-pointer text-gray-400 hover:text-blue-400">Home</a>
       <a href="#about" className=" cursor-pointer text-gray-400 hover:text-blue-400">About</a>
       <a href="#experience" className="#experience cursor-pointer text-gray-400 hover:text-blue-400">Experience</a>
