@@ -1,6 +1,6 @@
 import CTA from "./CTA"
 import "./header.css"
-import ME from "../../assets/img.png"
+import ME from "../../assets/myimg.png"
 import HeaderSocial from "./HeaderSocial"
 import {motion} from "framer-motion"
 
