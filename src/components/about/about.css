@@ -1,0 +1,177 @@
+/* ============ABOUT TOP SECTION =========== */
+.about-top{
+    text-align: center;
+    line-height: 39px;
+    margin-top: -24px;
+    margin-bottom:39px ;
+}
+.about_meheading{
+    font-size: 1.8rem;
+}
+.get-go{
+  color: rgb(181, 175, 175);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* ========== ABOUT IMAGE SECTION ========== */
+.about__container{
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+
+}
+.about__me{
+    border: 2px solid black;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+}
+.about__me-image{
+    border-radius: 2rem;
+    background-color: red;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition:var(--transition);
+}
+.about__me-image:hover{
+    transform: rotate(0deg);
+    transition:var(--transition);
+}
+
+.about__cards{
+  display: flex;
+  
+    gap:1.5rem
+}
+.about__cards{
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+ 
+}
+.about__cards article{
+    background-color: var(--color-bg-variant);
+    border-radius:1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    font-size: 0.9rem;
+    margin-top: 0;
+    line-height: 23px;
+    transition: var(--transition);
+    
+}
+.about__cards article:hover{
+   background-color: rgb(44, 61, 123);
+   transition: var(--transition);
+    cursor: default;
+    scale: 1.1;
+    rotate: 2deg;
+}
+
+.card{
+    line-height: 19px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+.about__icon{
+    color: var(--color-primary);
+}
+
+.about__cards small{
+    font-size: 0.7rem;
+    color: var(--color-light);
+    line-height: 15px;
+}
+.about__content p{
+    text-align: start;
+    line-height: 20px;
+    color: var(--color-light);
+    margin-bottom: 23px;
+}
+
+
+/* =========== MEDIA SCREEN FOR TABLET ========= */
+
+@media screen and (max-width: 1024px) {
+    .about__container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15%;
+
+    }
+    .about__cards{
+     
+        display: flex;
+      
+        margin-bottom: 5px;
+         justify-content: center;
+        margin-top: 49px;
+        flex-wrap: wrap;
+        gap:1rem
+      }
+   
+    .about__content p{
+        text-align: center;
+      
+    }
+    .btns{
+       
+        display: flex;
+        justify-content: center;
+       
+    }
+  
+    
+    
+}
+
+/* =========== MEDIA SCREEN FOR MOBILE PHONE========= */
+@media screen and (max-width: 600px) {
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        gap: 15%;
+    }
+    .about__container{
+        padding:29px ;
+    }
+    .about__cards{
+        width: 128%;
+        margin-left:-40px;
+        display: flex;
+        padding: 0;
+        margin-bottom: 5px;
+         justify-content: center;
+         align-items: center;
+        margin-top: 7px;
+        flex-wrap: wrap;
+        gap:1rem
+      }
+      .about__cards .card1,.card2{
+      width: 40%;
+       
+     }
+      .last-card{
+        width: 100%;
+        margin-left:40px;
+        margin-right:40px;
+        margin-bottom: 23px;
+     
+      
+        /* margin: auto; */
+      }
+      .about__cards article:hover{
+         scale: 1.02;
+         rotate: 1deg;
+     }
+
+}

@@ -1,0 +1,171 @@
+
+.header__container{
+    display: flex;
+    padding-top: 3rem;
+    /* height: 100%; */
+    overflow: hidden; 
+}
+
+.mee{
+    mix-blend-mode: soft-light;
+}
+.helo{
+    color: rgb(198, 198, 198);
+    font-weight: bolder;
+}
+.midpart{
+    width: 80%; 
+    /* border: 2px solid black; */
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+}
+.rightpart{
+    width: 10%;
+    display: flex;
+    align-items: end;
+    position: relative;
+    /* border: 2px solid black; */
+}
+.textsec{
+    display: flex;
+    flex-direction: column;
+}
+.myname{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+.rotate{
+    transform: rotate(90deg);
+    /* border: 2px solid purple; */
+    width: 100px;
+    position: absolute;
+    bottom: 95px;
+    right: -40px;
+}
+.sayhello{
+    letter-spacing: 2px;
+    word-spacing: -2px;
+    text-align: center ;
+    font-size: 1rem;
+}
+
+
+
+
+/* ==================== CTA===================*/
+.cta{
+    margin-top: 1.6rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+/* ==================== Header social ===================*/
+
+.header__socials{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-bottom: 5rem;
+}
+.socialpart{
+    /* border: 2px solid red; */
+    width: 10%;
+    display: flex;
+    align-items: end;
+}
+.header__socials::after{
+    content: "";
+    width: 1px;
+    margin-left:7px ;
+    height: 2rem;
+    background-color: var(--color-primary);
+}
+.me{
+    background-color:var(--color-primary);
+    background: linear-gradient(var(--color-primary),rgb(16, 16, 39));
+    width:21rem;
+    margin-top: 2rem;
+    height: 25rem;
+    /* position: absolute; */
+    overflow: hidden;
+    /* left: calc(50% - 10rem); */
+    margin-top: 3rem;
+    border-radius:12rem 12rem 0 0;
+}
+.me img{
+    padding-top: 2.8em;
+}
+
+
+/* =========== MEDIA SCREEN FOR TABLET ========= */
+
+        @media (min-width:768px) and (max-width: 1978px) {
+            .container{
+                width: var(--container-width-md);
+            }
+            section{
+                margin-top: 6rem;
+            }
+            .me{
+                background-color:var(--color-primary);
+                background: linear-gradient(var(--color-primary),rgb(16, 16, 39));
+                width:23rem;
+                height: 29rem;
+                padding-top: 30px;
+                overflow: hidden;
+                margin-bottom: 3rem;
+                border-radius:12rem 12rem 0 0;
+            }
+            .me img{
+                padding-top: 19px;
+            }
+            
+        }
+/* =========== MEDIA SCREEN FOR MOBILE PHONE========= */
+@media screen and (max-width: 600px) {
+    .container{
+        width: var(--container-width-sm);
+        display: flex;
+        padding-top: 5rem;
+        justify-content: center;
+    }
+    .myname{
+        font-size: 1.9rem;
+        
+    }
+    .cta a{
+        padding: 0.6rem 0.2rem 0.6rem 0.2rem;
+    }
+    .me{
+        background-color:var(--color-primary);
+        background: linear-gradient(var(--color-primary),rgb(16, 16, 39));
+        width:16rem;
+        height: 20.6rem;
+        /* position: absolute; */
+        overflow: hidden;
+        /* left: calc(50% - 10rem); */
+        margin-top: 2rem;
+        border-radius:99rem 99rem 0 0;
+    }
+    .me img{
+        padding: 50px 12px;
+       
+    }
+    .rightpart{
+        display: none;
+    }
+    .socialpart{
+        display: none;
+    }
+    .sayhello{
+        font-size:1rem ;
+    }
+    section > h2{
+        margin-top: 3rem;
+    }
+}

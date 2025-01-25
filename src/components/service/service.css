@@ -1,0 +1,33 @@
+.service__container{
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+article{
+  width: 40%;
+  background-color: var(--color-bg-variant);
+  border-radius: 1rem;
+  padding: 3px;
+  margin-top: 70px;
+  
+}
+
+@media screen and (max-width:600px) {
+    .service__container{
+        flex-direction: column;
+        gap: 20px;
+
+    }
+    article{
+        width: 100%;
+      }
+      .texts{
+        margin-bottom: -63px;
+      }
+    
+      .serviceheading{
+        margin-top: 34px;
+      }
+}
