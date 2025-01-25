@@ -35,7 +35,7 @@ const Abouts = () => {
             <article className="card2 shadow-md shadow-blue-900 md:w-[30%] hover:shadow-blue-900">
               <VscFolder className="about__icon size-6"/>
               <h5 className="card">Frontend Projects</h5>
-              <small>40+ Completed Projects</small>
+              <small>40+ completed projects</small>
             </article>
 
             <article className="last-card shadow-md md:w-[30%] shadow-blue-900 hover:shadow-blue-900 md:m-0 md:p-0">
