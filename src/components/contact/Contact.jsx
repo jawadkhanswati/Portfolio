@@ -46,7 +46,7 @@ const sendEmail=(e)=>{
           <BsWhatsapp className="size-7 mb-3"/>
           <h4 className="text-xl font-bold">WhatsApp</h4>
           <h5>Contact me on WhatsApp</h5>
-          <a href="https://api.whatsapp.me/03170545835" target="blank">text message in whatsapp</a>
+          <a href="https://wa.me/03170545835" target="blank">text message in whatsapp</a>
         </article>
         </div>
 
